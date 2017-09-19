@@ -34,6 +34,6 @@ def zebra_puzzle():
 	return solution
 
 t0=time.time()
-print zebra_puzzle()
+print(zebra_puzzle())
 t1=time.time()
-print str(t1-t0) + " s"
+print(str(t1-t0) + " s")
