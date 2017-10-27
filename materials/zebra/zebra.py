@@ -9,7 +9,7 @@ def nextto(A,B):
 def zebra_puzzle():
 	houses = first, _ , middle, _, _ = [1,2,3,4,5]
 	orderings = list(itertools.permutations(houses))
-	#print orderings
+	print orderings
 	solution=[(WATER, ZEBRA) 
 					for (red,green,ivory,yellow,blue) in orderings
 					for (Englishman,Spaniard,Ukrainian,Japanese,Norwegian) in orderings
