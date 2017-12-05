@@ -12,7 +12,7 @@ def zebra_puzzle():
 	orderings = list(itertools.permutations(houses))
 	#print orderings
 	solution=[
-					print((Metal, Classical, Rock, Country, Pop))
+					(WATER, ZEBRA)
  
 					for (red,green,ivory,yellow,blue) in orderings
 
