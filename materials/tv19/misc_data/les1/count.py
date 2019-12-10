@@ -2,10 +2,10 @@
 
 def count_v1(dna, base):
 	#for var in iterable
-	#un iterabile è una qualunque variabile da cui è possibile
-	#accedere ai suoi elementi in sequenza (iterable.__next__)
+	#an iterable is any variable whose elements can be accessed sequentially
+	#it exists : iterable.__next__
 
-	#### es. radio.volume radio.turnOn() radio.modVolume(50)
+	#### the notation is typical for object oriented programming es. radio.volume radio.turnOn() radio.modVolume(50)
 	count = 0
 	for nt in dna:
 		#nt = dna.__next__
@@ -32,10 +32,10 @@ def count_v3(dna, base):
 		i+=1
 	return count
 
-### if (a) and (b or c) or (1,2,3) == (t,h,l)
-###tupla a singolo elemento: (var, ) -- trailing comma
+#parentheses can mean (expressions), or (tuples,) - the comma distinguishes between an expression and a 1-element tuple
 
-def count_v4_fabio(dna, base, ):
+
+def count_v4(dna, base, ):
 	#array -> Lists [], mutable ||  or Tuples (), immutable
 
 	bases = list("ACGT")
@@ -54,11 +54,12 @@ def count_v5(dna, base):
 	m = []
 	for c in dna:
 		m.append( True if c == base else False)
+		##this is equivalent to:
 		# if c == base:
 		#	m.append(True)
 		# else:
 		#   m.append(False)
-		##guardatevi l'operatore ternario in C
+		## and it's called ternary operator
 
 	return sum(m)
 
