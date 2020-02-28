@@ -43,8 +43,9 @@ def count_v4(dna, base, ):
 	result = []
 	count2 = 0
 	for base_nt in bases:
-		if count == range(len(dna)):
-			count2 += 1
+		for count in range(len(dna)):
+			if dna[count] == base:
+				count2 += 1
 		result.append(count2)
 		count2 = 0
 	return result[ind]
