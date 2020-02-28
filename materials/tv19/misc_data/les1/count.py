@@ -41,13 +41,12 @@ def count_v4(dna, base, ):
 	bases = list("ACGT")
 	ind = "ACGT".index(base)
 	result = []
-	count = 0
 	count2 = 0
 	for base_nt in bases:
-		if dna[count2] == base_nt:
-			count += 1
-		result.append(count)
-		count = 0
+		if count == range(len(dna)):
+			count2 += 1
+		result.append(count2)
+		count2 = 0
 	return result[ind]
 
 def count_v5(dna, base):
